@@ -5,7 +5,7 @@ section {
 .info-bar {
     background-color: #1E1F29;
     font-size: 0.6rem;
-    color: #fff;
+    color: #eee;
 }
 
 .info-bar .list-inline-item:not(:last-child) {
@@ -45,4 +45,23 @@ section {
         height: 0.8rem;
         margin-right: 0.1rem;
     }
+}
+
+/* navbar */
+.bg-nav {
+    background-color: #15161d;
+}
+
+.btn-addon1 {
+    background: #fff;
+    border-right: 2px solid #eed;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    padding: 0 1.2rem;
+}
+
+#btn-addon2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 0 1.2rem;
 }

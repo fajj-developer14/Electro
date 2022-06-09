@@ -14,54 +14,106 @@
   </head>
   <body>
     <header>
-      <div
-        class="info-bar fs-sm-1 py-1 px-2 px-md-5 d-md-flex align-items-center justify-content-md-between"
-      >
-        <ul class="list-inline d-md-inline-block mb-2 m-md-0">
-          <li class="list-inline-item">
-            <a class="info-bar-links" href="/">
-              <svg class="icon info-icons">
-                <use href="icons/sprite.svg#phone-solid"></use>
-              </svg>
-              +021-95-51-84
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="info-bar-links" href="/">
-              <svg class="icon info-icons">
-                <use href="icons/sprite.svg#envelope-regular"></use>
-              </svg>
-              email@email.com
-            </a>
-          </li>
-          <li class="list-inline-item mt-1 m-md-0">
-            <a class="info-bar-links" href="/">
-              <svg class="icon info-icons">
-                <use href="icons/sprite.svg#location-dot-solid"></use>
-              </svg>
-              1734 Stonecoal Road
-            </a>
-          </li>
-        </ul>
-        <ul class="list-inline d-md-inline-block mb-1 m-md-0 info-bar-list">
-          <li class="list-inline-item">
-            <a class="info-bar-links" href="/">
-              <svg class="icon info-icons">
-                <use href="icons/sprite.svg#dollar-sign-solid"></use>
-              </svg>
-              USD
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="info-bar-links" href="/">
-              <svg class="icon info-icons">
-                <use href="icons/sprite.svg#user-regular"></use>
-              </svg>
-              My Account
-            </a>
-          </li>
-        </ul>
+      <!-- information bar -->
+      <div class="info-bar">
+        <div
+          class="container-lg py-1 py-md-2 px-2 px-md-5 d-md-flex align-items-center justify-content-md-between"
+        >
+          <ul class="list-inline d-md-inline-block mb-2 m-md-0">
+            <li class="list-inline-item">
+              <a class="info-bar-links" href="/">
+                <svg class="icon info-icons">
+                  <use href="icons/sprite.svg#phone-solid"></use>
+                </svg>
+                +021-95-51-84
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="info-bar-links" href="/">
+                <svg class="icon info-icons">
+                  <use href="icons/sprite.svg#envelope-regular"></use>
+                </svg>
+                email@email.com
+              </a>
+            </li>
+            <li class="list-inline-item mt-1 m-md-0">
+              <a class="info-bar-links" href="/">
+                <svg class="icon info-icons">
+                  <use href="icons/sprite.svg#location-dot-solid"></use>
+                </svg>
+                1734 Stonecoal Road
+              </a>
+            </li>
+          </ul>
+          <ul class="list-inline d-md-inline-block mb-1 m-md-0 info-bar-list">
+            <li class="list-inline-item">
+              <a class="info-bar-links" href="/">
+                <svg class="icon info-icons">
+                  <use href="icons/sprite.svg#dollar-sign-solid"></use>
+                </svg>
+                USD
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="info-bar-links" href="/">
+                <svg class="icon info-icons">
+                  <use href="icons/sprite.svg#user-regular"></use>
+                </svg>
+                My Account
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- navigation bar -->
+      <nav class="navbar bg-nav bg-dark">
+        <div class="container-lg">
+          <div class="row w-100 justify-content-center align-items-center">
+            <!-- brand -->
+            <div class="col-lg-3 d-flex justify-content-center">
+              <img class="mx-auto" src="images/brand.webp" alt="Electro" />
+            </div>
+
+            <!-- Input group -->
+            <div class="col-sm-9 col-lg-6">
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-light dropdown-toggle d-sm-none shadow-none btn-addon1"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></button>
+                <button
+                  class="btn btn-light dropdown-toggle d-none d-sm-block shadow-none btn-addon1"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  All categories
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Category 1</a></li>
+                  <li><a href="#" class="dropdown-item">Category 2</a></li>
+                  <li><a href="#" class="dropdown-item">Category 3</a></li>
+                </ul>
+                <input
+                  type="text"
+                  class="form-control shadow-none nav-input"
+                  placeholder="Search"
+                />
+                <button
+                  class="btn btn-danger shadow-none"
+                  type="button"
+                  id="btn-addon2"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
