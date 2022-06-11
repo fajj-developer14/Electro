@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 :root {
     --main-red: #D10024;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
 }
 
 section {
@@ -66,12 +73,15 @@ section {
     border-top-left-radius: 50px !important;
     border-bottom-left-radius: 50px !important;
     padding: 0 1.2rem;
+    font-size: 14px;
 }
 
 #btn-addon2 {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     padding: 0 1.2rem;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .header-ctn {
@@ -80,13 +90,15 @@ section {
 }
 
 .item {
+    text-align: center;
     margin: 0 3px;
     vertical-align: top;
     display: inline-block;
-    width: 80px;
+    width: 90px;
 }
 
 .icon-nav {
+    text-align: center;
     width: 1.3rem;
     height: 1.3rem;
     fill: #fff;
@@ -105,23 +117,22 @@ section {
     }
 
     .item {
-        margin: 0 10px;
-    }
-
-    .caption {
-        font-size: 0.8rem;
+        margin: 0 5px;
     }
 }
 
 /* sidebar */
-.offcanvas {
+.offcanvas-lg {
     max-width: 250px;
     background-color: #15161d;
+    padding-top: 3rem;
+    font-size: 14px;
 }
 
 .sidebar-link {
     display: block;
     color: #fff;
+    font-weight: 500;
     padding: 0.85rem 0.2rem ;
     text-decoration: none;
     transition: 0.15s color;
@@ -151,4 +162,26 @@ section {
 .offcanvas-body ul>.active .sidebar-link::after {
     color: var(--main-red);
     width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .offcanvas-lg {
+        max-width: 100%;
+        padding: 0 3rem;
+        border-bottom: 2px solid #e4e7ed;
+    }
+    .sidebar-list {
+        display: flex;
+        margin: 0;
+    }
+
+    .sidebar-link {
+        color: #2B2D42;
+        padding: 1.25rem 0;
+    }
+
+    .sidebar-list>li {
+        margin: 0 1rem;
+    }
+
 }
