@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+/* Generic */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
     --main-red: #D10024;
     --main-grey: #e4e7ed;
+    --link-color: #2B2D42;
 }
 
 body {
@@ -14,6 +16,42 @@ section {
     padding: 60px 0;
 }
 
+.link-underline {
+    transition: 0.15s color;
+}
+
+.link-underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-red);
+    transition: 0.2s all;
+}
+
+.link-underline:hover::after, .link-underline:active::after,
+.link-underline:focus::after {
+    width: 100%;
+}
+
+.active .link-underline, 
+.active .link-underline::after {
+    color: var(--main-red);
+    width: 100%;
+}
+
+.link-hov-red {
+    transition: 0.05s all;
+}
+
+.link-hov-red:hover,
+.link-hov-red:active,
+.link-hov-red:focus  {
+    color: var(--main-red);
+}
+
+
+/* info-bar */
 .info-bar {
     background-color: #1E1F29;
     font-size: 0.6rem;
@@ -136,34 +174,8 @@ section {
     font-weight: 500;
     padding: 0.85rem 0.2rem ;
     text-decoration: none;
-    transition: 0.15s color;
 }
 
-.sidebar-link:hover,
-.sidebar-link:active,
-.sidebar-link:focus  {
-    color: var(--main-red);
-}
-
-.sidebar-link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: var(--main-red);
-    transition: 0.2s all;
-}
-
-.sidebar-link:hover::after, .sidebar-link:active::after,
-.sidebar-link:focus::after {
-    width: 100%;
-}
-
-.offcanvas-body ul>.active .sidebar-link, 
-.offcanvas-body ul>.active .sidebar-link::after {
-    color: var(--main-red);
-    width: 100%;
-}
 
 @media screen and (min-width: 992px) {
     .offcanvas-lg {
@@ -177,7 +189,7 @@ section {
     }
 
     .sidebar-link {
-        color: #2B2D42;
+        color: var(--link-color);
         padding: 1.25rem 0;
     }
 
@@ -248,7 +260,25 @@ section {
 
 @media screen and (min-width: 450px) and (max-width: 576px) {
     .collections .col-11 {
+        /* col-9 */
         flex: 0 0 auto;
         width: 75%;
     }
+}
+
+/* New products */
+.new-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #8d998d;
+    font-weight: bold;
+}
+
+.new-link:hover {
+    color: var(--link-color);
+} 
+
+.new-heading {
+    color: var(--link-color);
+    font-weight: bold;
 }
