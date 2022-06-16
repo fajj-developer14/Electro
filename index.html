@@ -10,6 +10,10 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/9a45ae5449.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -282,7 +286,9 @@
     <!-- New Products Section -->
     <section class="new-products">
       <div class="container-md">
-        <header class="d-md-flex justify-content-between align-items-center">
+        <header
+          class="d-md-flex justify-content-between align-items-center mb-5"
+        >
           <h2 class="h3 text-uppercase mb-3 new-heading">new Products</h2>
           <ul class="inline-list p-0">
             <li class="list-inline-item">
@@ -307,9 +313,73 @@
             </li>
           </ul>
         </header>
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-10 col-sm-6 col-lg-3">
+            <div class="card card-product">
+              <img class="img-fluid" src="images/tablet.webp" alt="A tablet" />
+              <div class="card-body text-center">
+                <div class="category">CATEGORY</div>
+                <h3 class="my-2 product-name">
+                  <a class="card-link link-hov-red" href="#">
+                    PRODUCT NAME GOES HERE
+                  </a>
+                </h3>
+                <div class="product-price">
+                  <span class="new-price">$980.00</span>
+                  <span class="old-price">$990.00</span>
+                </div>
+                <div class="product-rating my-3">
+                  <i class="fa fa-solid fa-star"></i>
+                  <i class="fa fa-solid fa-star"></i>
+                  <i class="fa fa-solid fa-star"></i>
+                  <i class="fa fa-solid fa-star"></i>
+                  <i class="fa fa-solid fa-star"></i>
+                </div>
+                <div class="card-btns px-2">
+                  <button
+                    class="product-btn"
+                    type="button"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="ADD TO WISHLIST"
+                  >
+                    <i class="fa fa-regular fa-heart"></i>
+                  </button>
+                  <button
+                    class="product-btn"
+                    type="button"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="ADD TO COMPARE"
+                  >
+                    <i class="fa fa-solid fa-right-left"></i>
+                  </button>
+                  <button
+                    class="product-btn"
+                    type="button"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="QUICK VIEW"
+                  >
+                    <i class="fa fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

@@ -5,6 +5,9 @@
     --main-red: #D10024;
     --main-grey: #e4e7ed;
     --link-color: #2B2D42;
+    --grey-two: #8d998d;
+    --twelve-px: 0.75rem;
+    --fourteen-px: 0.875rem;
 }
 
 body {
@@ -13,7 +16,7 @@ body {
 }
 
 section {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .link-underline {
@@ -75,8 +78,8 @@ section {
 
 .info-icons {
     fill: var(--main-red);
-    width: 0.75rem;
-    height: 0.75rem;
+    width: var(--twelve-px);
+    height: var(--twelve-px);
     transform: translateY(-1px);
     margin-right: 0.05rem;
 }
@@ -237,12 +240,12 @@ section {
 .shop-link {
     color: inherit;
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--fourteen-px);
 }
 
 .shop-icon {
-    width: 0.75rem;
-    height: 0.875rem;
+    width: var(--twelve-px);
+    height: var(--fourteen-px);
     transform: translateY(-1px);
     fill: #faf6f6;
 }
@@ -268,17 +271,94 @@ section {
 
 /* New products */
 .new-link {
-    font-size: 0.875rem;
+    font-size: var(--fourteen-px);
     text-decoration: none;
-    color: #8d998d;
+    color: var(--grey-two);
     font-weight: bold;
 }
 
 .new-link:hover {
-    color: var(--link-color);
+    color: var(--grey-two);
 } 
 
 .new-heading {
     color: var(--link-color);
     font-weight: bold;
+}
+
+/* card */
+.card-product {
+    border-radius: 0;
+    transition: border 0.05s;
+}
+
+.card-product:hover, 
+.card-product:focus {
+    border: 2px solid var(--main-red);
+}
+
+.category {
+    font-size: var(--twelve-px);
+    color: #8d99ae;
+}
+
+.product-name  {
+    font-size: var(--fourteen-px);
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.new-price {
+    font-size: 1.125rem;
+    color: var(--main-red);
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color: var(--grey-two);
+}
+
+.product-rating {
+    position: relative;
+    font-size: var(--fourteen-px);
+    color: var(--main-red);
+}
+
+.product-rating>.fa-star {
+    position: relative;
+    z-index: 10;
+    margin: -3px;
+}
+
+.product-rating::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background-color: var(--main-grey);
+}
+
+.product-btn {
+    background: #fff;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    margin: 1px 6px;
+    border-radius: 100%;
+    transition: all 0.15s ease-in;
+}
+
+.product-btn:hover,
+.product-btn:active {
+    background-color: #f0f0f0;
+    color: var(--main-red);
 }
