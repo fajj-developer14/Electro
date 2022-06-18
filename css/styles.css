@@ -403,7 +403,8 @@ section {
     transition: all 0.15s;
 }
 
-.cart-btn:hover {
+.cart-btn:hover,
+.cart-btn:focus {
     background-color: #fff;
     border: 2px solid var(--main-red);
     color: var(--main-red);
@@ -423,9 +424,6 @@ section {
     margin-right: 0.6rem;
 }
 
-.card-product {
-    margin-bottom: 5rem;
-}
 
 .product-new::before,
 .product-discount::after {
@@ -454,4 +452,51 @@ section {
 
 .product-new.product-discount::after {
     right: 5rem;
+}
+
+/* Hotdeal */
+
+.hotdeal {
+    padding: 50px 0;
+    background-color: var(--main-grey);
+    background-image: url(../images/hotdeal.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hotdeal-countdown {
+    margin-bottom: 30px;
+}
+
+.hotdeal-countdown li {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-red);
+    border-radius: 100%;
+    color: #fff;
+}
+
+.countdown-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.countdown-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.time-type {
+    font-size: 0.625rem;
+    display: block;
+}
+
+.hotdeal-btn {
+    background-color: var(--main-red);
+    font-size: var(--fourteen-px);
 }
