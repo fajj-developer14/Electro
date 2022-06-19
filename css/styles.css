@@ -16,7 +16,7 @@ body {
 }
 
 section {
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .link-underline {
@@ -275,18 +275,18 @@ section {
 
 /* New products */
 /* TODO: rename the classes  */
-.new-link {
+.product-header-link {
     font-size: var(--fourteen-px);
     text-decoration: none;
     color: var(--grey-two);
     font-weight: bold;
 }
 
-.new-link:hover {
+.product-header-link:hover {
     color: var(--grey-two);
 } 
 
-.new-heading {
+.product-header-heading {
     color: var(--link-color);
     font-weight: bold;
 }
@@ -312,6 +312,7 @@ section {
 .category {
     font-size: var(--twelve-px);
     color: #8d99ae;
+    text-transform: uppercase;
 }
 
 .product-name  {
@@ -324,14 +325,17 @@ section {
     font-weight: bold;
 }
 
-.new-price {
+.product-price {
     font-size: 1.125rem;
+}
+
+.new-price {
     color: var(--main-red);
     font-weight: bold;
 }
 
 .old-price {
-    font-size: 0.8rem;
+    font-size: 70%;
     text-decoration: line-through;
     color: var(--grey-two);
 }
@@ -498,5 +502,47 @@ section {
 
 .hotdeal-btn {
     background-color: var(--main-red);
+    font-size: var(--fourteen-px);
+}
+
+/* Top selling */
+.slide-btn {
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 100%;
+    width: 1.15rem;
+    height: 1.15rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: var(--link-color);
+    transition: fill 0.15s;
+}
+
+.slide-btn:hover .product-icon {
+    fill: var(--main-red);
+}
+
+.media-img {
+    width: 60px;
+}
+
+.media-body .category {
+    font-size: 0.625rem;
+}
+
+.product-widget-name {
+    font-size: var(--twelve-px);
+}
+
+.product-widget-price  {
     font-size: var(--fourteen-px);
 }
