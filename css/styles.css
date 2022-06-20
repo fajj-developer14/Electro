@@ -119,14 +119,14 @@ section {
     border-top-left-radius: 50px !important;
     border-bottom-left-radius: 50px !important;
     padding: 0 1.2rem;
-    font-size: 14px;
+    font-size: var(--fourteen-px);
 }
 
-#btn-addon2 {
+.btn-addon2 {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     padding: 0 1.2rem;
-    font-size: 14px;
+    font-size: var(--fourteen-px);
     font-weight: bold;
 }
 
@@ -545,4 +545,65 @@ section {
 
 .product-widget-price  {
     font-size: var(--fourteen-px);
+}
+
+/* newsletter */
+.newsletter {
+    border-top: 2px solid var(--main-grey);
+}
+
+.newsletter .input-group {
+    position: relative;
+    margin: 2.2rem 0;
+}
+
+.newsletter-text {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.icon-newsletter {
+    font-size: 1rem;
+    fill: #fff;
+}
+
+.newsletter-input {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.newsletter-input:focus {
+    border: 2px solid #000;
+}
+
+.newsletter .input-group::after {
+    content: "\f003";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 160px;
+    color: var(--main-grey);
+    top: 15px;
+    left: -90px;
+    transform: translateY(-50%) rotate(15deg);
+    z-index: -1;
+}
+
+.social-media-icons {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid var(--main-grey);
+    font-size: var(--fourteen-px);
+    color: #000;
+    transition: all 0.2s;
+}
+
+.social-media-icons:hover,
+.social-media-icons:active,
+.social-media-icons:focus {
+    background-color: #f0f0f0;
+    color: var(--main-red);
 }
