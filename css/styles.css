@@ -16,7 +16,7 @@ body {
 }
 
 section {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .link-underline {
@@ -515,6 +515,7 @@ section {
     height: 1.15rem;
     cursor: pointer;
     position: relative;
+    margin: 0 1px;
 }
 
 .product-icon {
@@ -537,6 +538,10 @@ section {
 
 .media-body .category {
     font-size: 0.625rem;
+}
+
+.product-widget .product-header-heading {
+    line-height: 1.6;
 }
 
 .product-widget-name {
@@ -606,4 +611,14 @@ section {
 .social-media-icons:focus {
     background-color: #f0f0f0;
     color: var(--main-red);
+}
+
+.swiper-slide {
+    margin-bottom: 4.69rem;
+}
+.product-swiper-btn {
+    position: absolute;
+    right: 3px;
+    transform: translateY(-4.3rem);
+    z-index: 22;
 }
