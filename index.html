@@ -1105,11 +1105,10 @@
             </button>
           </div>
         </div>
-
         <!-- product widgets -->
         <div class="product-widget pt-4">
           <div class="row justify-content-between">
-            <div class="col-sm-5 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <header
                 class="product-header mb-3 d-flex justify-content-between"
               >
@@ -1117,14 +1116,24 @@
                   top selling
                 </h3>
                 <div class="me-2">
-                  <button class="slide-btn" type="button">
+                  <button
+                    class="slide-btn"
+                    type="button"
+                    data-bs-target="#product-carousel1"
+                    data-bs-slide="prev"
+                  >
                     <svg class="icon product-icon">
                       <use
                         href="icons/sprite.svg#circle-chevron-left-solid"
                       ></use>
                     </svg>
                   </button>
-                  <button class="slide-btn" type="button">
+                  <button
+                    class="slide-btn"
+                    type="button"
+                    data-bs-target="#product-carousel1"
+                    data-bs-slide="next"
+                  >
                     <svg class="icon product-icon">
                       <use
                         href="icons/sprite.svg#circle-chevron-right-solid"
@@ -1134,71 +1143,146 @@
                 </div>
               </header>
 
-              <div class="media d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/mobile-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
+              <div
+                id="product-carousel1"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/mobile-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media my-4 d-flex">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/headphones-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="media my-4 d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/laptop-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="media d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/headphones-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
+                  <div class="carousel-item">
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/camera.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media my-4 d-flex">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop2.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-5 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <header
                 class="product-header mb-3 d-flex justify-content-between"
               >
@@ -1206,14 +1290,24 @@
                   top selling
                 </h3>
                 <div class="me-2">
-                  <button class="slide-btn" type="button">
+                  <button
+                    class="slide-btn"
+                    type="button"
+                    data-bs-target="#product-carousel2"
+                    data-bs-slide="prev"
+                  >
                     <svg class="icon product-icon">
                       <use
                         href="icons/sprite.svg#circle-chevron-left-solid"
                       ></use>
                     </svg>
                   </button>
-                  <button class="slide-btn" type="button">
+                  <button
+                    class="slide-btn"
+                    type="button"
+                    data-bs-target="#product-carousel2"
+                    data-bs-slide="next"
+                  >
                     <svg class="icon product-icon">
                       <use
                         href="icons/sprite.svg#circle-chevron-right-solid"
@@ -1223,71 +1317,146 @@
                 </div>
               </header>
 
-              <div class="media d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/mobile-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
+              <div
+                id="product-carousel2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/mobile-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media my-4 d-flex">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/headphones-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="media my-4 d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/laptop-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="media d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/headphones-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
+                  <div class="carousel-item">
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/camera.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media my-4 d-flex">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop2.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-5 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <header
                 class="product-header mb-3 d-flex justify-content-between"
               >
@@ -1295,14 +1464,24 @@
                   top selling
                 </h3>
                 <div class="me-2">
-                  <button class="slide-btn" type="button">
+                  <button
+                    class="slide-btn"
+                    type="button"
+                    data-bs-target="#product-carousel3"
+                    data-bs-slide="prev"
+                  >
                     <svg class="icon product-icon">
                       <use
                         href="icons/sprite.svg#circle-chevron-left-solid"
                       ></use>
                     </svg>
                   </button>
-                  <button class="slide-btn" type="button">
+                  <button
+                    class="slide-btn"
+                    type="button"
+                    data-bs-target="#product-carousel3"
+                    data-bs-slide="next"
+                  >
                     <svg class="icon product-icon">
                       <use
                         href="icons/sprite.svg#circle-chevron-right-solid"
@@ -1312,66 +1491,141 @@
                 </div>
               </header>
 
-              <div class="media d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/mobile-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
+              <div
+                id="product-carousel3"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/mobile-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media my-4 d-flex">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/headphones-widget.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="media my-4 d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/laptop-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="media d-flex">
-                <div class="media-img">
-                  <img
-                    class="img-fluid"
-                    src="images/headphones-widget.webp"
-                    alt="A moblie"
-                  />
-                </div>
-                <div class="media-body ps-3">
-                  <div class="category">CATEGORY</div>
-                  <h3 class="my-2 product-widget-name">
-                    <a class="card-link link-hov-red" href="#">
-                      PRODUCT NAME GOES HERE
-                    </a>
-                  </h3>
-                  <div class="product-widget-price">
-                    <span class="new-price">$980.00</span>
-                    <span class="old-price">$990.00</span>
+                  <div class="carousel-item">
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/camera.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media my-4 d-flex">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop2.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media d-flex align-items-center">
+                      <div class="media-img">
+                        <img
+                          class="img-fluid"
+                          src="images/laptop.webp"
+                          alt="A moblie"
+                        />
+                      </div>
+                      <div class="media-body ps-3">
+                        <div class="category">CATEGORY</div>
+                        <h3 class="my-2 product-widget-name">
+                          <a class="card-link link-hov-red" href="#">
+                            PRODUCT NAME GOES HERE
+                          </a>
+                        </h3>
+                        <div class="product-widget-price">
+                          <span class="new-price">$980.00</span>
+                          <span class="old-price">$990.00</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
