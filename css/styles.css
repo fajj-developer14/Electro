@@ -85,7 +85,7 @@ section {
     width: var(--twelve-px);
     height: var(--twelve-px);
     transform: translateY(-1px);
-    margin-right: 0.05rem;
+    margin-right: 0.15rem;
 }
 
 @media screen and (min-width: 480px) {
@@ -98,9 +98,8 @@ section {
     }
 
     .info-icons {
-        width: 0.8rem;
-        height: 0.8rem;
-        margin-right: 0.1rem;
+        width: var(--fourteen-px);
+        height: var(--fourteen-px);    
     }
 }
 
@@ -349,7 +348,12 @@ section {
 .product-rating>.fa-star {
     position: relative;
     z-index: 10;
-    margin: -3px;
+    margin-right: -4px;
+    background-color: #fff;
+}
+
+.star-empty {
+    color: var(--main-grey);
 }
 
 .product-rating::before {
@@ -613,6 +617,8 @@ section {
     color: var(--main-red);
 }
 
+/* swiper */
+
 .swiper-slide {
     margin-bottom: 4.69rem;
 }
@@ -621,4 +627,36 @@ section {
     right: 3px;
     transform: translateY(-4.3rem);
     z-index: 22;
+}
+
+/* footer */
+.footer {
+    font-size: var(--fourteen-px);
+    color: #b9babc;
+}
+
+.footer h2 {
+    color: #fff;
+    margin-bottom: 1.75rem;
+}
+
+/* upper footer */
+
+#upper-footer {
+    border-top: 3px solid var(--main-red);
+    background-color: #15161d;
+    padding: 30px 0;
+}
+
+.footer-col {
+    margin: 30px 0;
+}
+
+.footer-item {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.footer-icon {
+    margin-right: 0.8rem;
 }
